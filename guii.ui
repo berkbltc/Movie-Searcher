@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="ttk.Frame" id="Frame_1">
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="ttk.Button" id="Button_S">
+        <property name="text" translatable="yes">Search</property>
+        <bind add="True" handler="printMe" sequence="&lt;1&gt;" />
+        <layout>
+          <property name="column">1</property>
+          <property name="pady">25</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="sticky">e</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="Entry_2">
+        <property name="font">TkDefaultFont</property>
+        <property name="text" translatable="yes">asdasddas</property>
+        <property name="textvariable">string:inputs</property>
+        <property name="validate">none</property>
+        <property name="width">33</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="ipadx">40</property>
+          <property name="ipady">0</property>
+          <property name="padx">10</property>
+          <property name="pady">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Text" id="Text_1">
+        <property name="autoseparators">false</property>
+        <property name="blockcursor">false</property>
+        <property name="exportselection">true</property>
+        <property name="height">10</property>
+        <property name="insertunfocussed">none</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Text_1</property>
+        <property name="width">30</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="ipadx">20</property>
+          <property name="ipady">50</property>
+          <property name="padx">10</property>
+          <property name="pady">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property name="rowspan">2</property>
+          <property name="sticky">e</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
